@@ -9,7 +9,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'https://taskflow-production-77d.up.railway.app'],
+  origin: ['http://localhost:5173', 'http://localhost:5174', 'https://task-flow-nine-beige.vercel.app'],
   credentials: true
 }));
 app.use(express.json());
