@@ -33,6 +33,7 @@ router.post('/register', [
       user: { _id: user._id, name: user.name, email: user.email, avatar: user.avatar, role: user.role }
     });
   } catch (error) {
+     console.error("REGISTER ERROR:", error);
     res.status(500).json({ message: 'Server error' });
   }
 });
